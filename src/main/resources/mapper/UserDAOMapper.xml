@@ -3,8 +3,8 @@
 
     <!--login-->
     <select id="login" parameterType="User" resultType="User">
-        select id,username,password from t_user where username=#{username}
-        and password=#{password}
+        select id,username,password from t_user
+        where username=#{username} and password=#{password}
     </select>
 
 </mapper>

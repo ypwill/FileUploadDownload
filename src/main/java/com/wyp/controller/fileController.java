@@ -72,7 +72,7 @@ public class fileController {
         String filePath = System.getProperty("user.dir") + "/uploadFile/";
         System.out.println(filePath);
         String dateFormat = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
-        String dateDirPath = filePath + "/" + dateFormat;
+        String dateDirPath = filePath + dateFormat;
         File dateDir = new File(dateDirPath);
         if(!dateDir.exists()){
             dateDir.mkdirs();
