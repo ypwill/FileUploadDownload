@@ -28,7 +28,7 @@ public class UserFileServiceImpl implements UserFileService {
     @Override
     public void save(UserFile userFile) {
         //userFile.setIsImg(); //是否是图片 解决方案：当文件类型中 含有image时 说明当前文件类型一定是图片
-        String isImg =userFile.getType().startsWith("image") ? "是" : "否";
+        String isImg =userFile.getType().startsWith("image") ? "是" : "否1";
         userFile.setIsImg(isImg);
         userFile.setDowncounts(0);
         userFile.setUploadTime(new Date());
